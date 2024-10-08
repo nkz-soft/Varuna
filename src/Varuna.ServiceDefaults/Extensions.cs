@@ -25,7 +25,7 @@ public static class Extensions
             http.AddStandardResilienceHandler();
 
             // Turn on service discovery by default
-            http.UseServiceDiscovery();
+            http.AddServiceDiscovery();
         });
 
         return builder;
@@ -105,7 +105,7 @@ public static class Extensions
         // Only health checks tagged with the "live" tag must pass for app to be considered alive
         app.MapHealthChecks("/alive", new HealthCheckOptions
         {
-            Predicate = r => r.Tags.Contains("live")
+            Predicate = healthCheckRegistration => healthCheckRegistration.Tags.Contains("live")
         });
 
         return app;

@@ -6,12 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Varuna.ApiService\Varuna.ApiService.csproj" />
+    <ProjectReference Include="..\Varuna.Presentation.Rest\Varuna.Presentation.Rest.csproj" />
     <ProjectReference Include="..\Varuna.Web\Varuna.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting" />
+    <PackageReference Include="Aspire.Hosting.AppHost" />
+    <PackageReference Include="Aspire.Hosting.Keycloak" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageVersion Update="Meziantou.Analyzer" Version="2.0.169" />
   </ItemGroup>
 
 </Project>

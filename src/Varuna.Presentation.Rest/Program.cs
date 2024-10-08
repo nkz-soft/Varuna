@@ -4,9 +4,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddServiceDefaults();
 
 // Add services to the container.
-builder.Services.AddProblemDetails();
+builder.Services.AddProblemDetails()
+    .AddEndpointsApiExplorer()
+    .AddSwaggerGen();
 
 var app = builder.Build();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
@@ -16,6 +23,7 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
+app.MapSwagger().RequireAuthorization();
 app.MapGet("/weatherforecast", () =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
@@ -31,9 +39,10 @@ app.MapGet("/weatherforecast", () =>
 
 app.MapDefaultEndpoints();
 
-app.Run();
+await app.RunAsync()
+    .ConfigureAwait(false);
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+sealed record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }

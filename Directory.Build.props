@@ -6,9 +6,10 @@
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisLevel>latest</AnalysisLevel>
     <Features>strict</Features>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -18,7 +19,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>   
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
@@ -27,6 +28,21 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All"/>
+    <PackageReference Include="Meziantou.Analyzer" PrivateAssets="All"/>
+    <PackageReference Include="Roslynator.Analyzers" PrivateAssets="All"/>
+    <PackageReference Include="Roslynator.CodeAnalysis.Analyzers" PrivateAssets="All"/>
+    <PackageReference Include="Roslynator.Formatting.Analyzers" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" PrivateAssets="All"/>
+    <PackageReference Include="AsyncAwaitBestPractices" PrivateAssets="All"/>
+    <PackageReference Include="CSharpGuidelinesAnalyzer" PrivateAssets="All"/>
   </ItemGroup>
+
+  <PropertyGroup>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    <AnalysisLevel>latest-Recommended</AnalysisLevel>
+    <AnalysisMode>Recommended</AnalysisMode>
+  </PropertyGroup>
 
 </Project>

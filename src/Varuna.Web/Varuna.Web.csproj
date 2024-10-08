@@ -8,4 +8,8 @@
     <ProjectReference Include="..\Varuna.ServiceDefaults\Varuna.ServiceDefaults.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageVersion Update="Meziantou.Analyzer" Version="2.0.169" />
+  </ItemGroup>
+
 </Project>
