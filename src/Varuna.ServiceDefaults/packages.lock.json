@@ -98,9 +98,9 @@
       },
       "OpenTelemetry.Instrumentation.GrpcNetClient": {
         "type": "Direct",
-        "requested": "[1.6.0-beta.2, )",
-        "resolved": "1.6.0-beta.2",
-        "contentHash": "q0g+3M8zoISr37kqPIibMiJIU1cIZqH0WeOVN4K+M7MM25ZJoAxHPwqTNY6otNKoBJRHdMiz2qGJEjOxGYcHDg==",
+        "requested": "[1.6.0-beta.3, )",
+        "resolved": "1.6.0-beta.3",
+        "contentHash": "nzw8D5in6Hg/GbjNlq2FETP4GjSckae9hPGTxAUO7UiOS1lqkyxZJ7f4ntIjFKbiS3wuA9wPfQVH/3CaPV6EvQ==",
         "dependencies": {
           "OpenTelemetry": "1.6.0"
         }
