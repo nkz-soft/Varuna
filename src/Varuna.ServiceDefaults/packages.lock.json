@@ -139,9 +139,9 @@
       },
       "Roslynator.Formatting.Analyzers": {
         "type": "Direct",
-        "requested": "[4.12.7, )",
-        "resolved": "4.12.7",
-        "contentHash": "GT0WmGIRei0yY+SAmQ3A/hw4x8oTFsPlV65R5Lae8E4Bs4SfYR/Z3ANRz6TJjQCKlAJ2p7y4Xu56mGE/RZm4ig=="
+        "requested": "[4.12.8, )",
+        "resolved": "4.12.8",
+        "contentHash": "wiqhZ7Tpxkoq5mB6NsjQUC0QLG+amjNZA6v4GkZufPVxpGSWh2oCFYihZEpOUxeZBF7aIiF9QqAe7xBlSg5Eow=="
       },
       "Google.Protobuf": {
         "type": "Transitive",
