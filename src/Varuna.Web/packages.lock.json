@@ -44,9 +44,9 @@
       },
       "Roslynator.CodeAnalysis.Analyzers": {
         "type": "Direct",
-        "requested": "[4.12.8, )",
-        "resolved": "4.12.8",
-        "contentHash": "vYpa/K2Xa3JGtXGzgS6rMXvVzIBuw3GHfKu7fmVkE1eVyKn2NX21wXB9ioAsQftIGEznL4Tw/tYbth0Hw1LPMg=="
+        "requested": "[4.12.9, )",
+        "resolved": "4.12.9",
+        "contentHash": "EFELMNQjWW32pYOP0a5gRulOGs/IAKHrlQ+8rEtpzeNEQ35Kw1ba7q9f9PNlY8fz/7+oK2HQQ7hGHVo+ke961g=="
       },
       "Roslynator.Formatting.Analyzers": {
         "type": "Direct",
