@@ -50,9 +50,9 @@
       },
       "Roslynator.Formatting.Analyzers": {
         "type": "Direct",
-        "requested": "[4.12.8, )",
-        "resolved": "4.12.8",
-        "contentHash": "wiqhZ7Tpxkoq5mB6NsjQUC0QLG+amjNZA6v4GkZufPVxpGSWh2oCFYihZEpOUxeZBF7aIiF9QqAe7xBlSg5Eow=="
+        "requested": "[4.12.9, )",
+        "resolved": "4.12.9",
+        "contentHash": "DOS/WK8xLvqPgD/SDVHQ6vI4T5uhDQftPuCXP1jB0TztzPrlblNud1F+9GhjzPIQrxxzkBmG65rihNErp2WVhg=="
       },
       "Google.Protobuf": {
         "type": "Transitive",
